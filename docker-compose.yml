@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+ mgr:
+  build: .
+  ports:
+   - 8080:8080
+  working_dir: /mnt/btrfs
+  volumes:
+   - "/mnt/btrfs:/mnt/btrfs"
